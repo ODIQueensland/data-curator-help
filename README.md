@@ -1,2 +1,2 @@
 # csv-lingo
-A CSV schema builder
+A draft help file
