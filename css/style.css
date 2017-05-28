@@ -3,10 +3,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a:link, a:visited {
   color: #178cff;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: #ff6700;
 }
