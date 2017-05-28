@@ -25,9 +25,17 @@ div.related-topics {
   background-color: #d9d9d9;
   border-radius: 15px;
   padding: 5px 15px 10px 15px;
-  margin: 10px;
+  margin: 0px;
 }
 
 div.related-topics h1, h2, h3 {
   color: #666666;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  padding-bottom: 20px;
 }
