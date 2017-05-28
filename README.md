@@ -1,2 +1,2 @@
 # csv-lingo
-A draft help file
+draft help pages for the new comma chameleon
