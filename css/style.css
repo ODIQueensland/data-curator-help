@@ -54,3 +54,25 @@ div.footer a {
   color: white;
   font-size: 80%;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
+}
+
+table th {
+  background-color: #0dbc37;
+  color: white;
+  text-emphasis: bold;
+  text-align: left;
+  padding: 10px;
+}

@@ -13,171 +13,473 @@
 
   <h1>Keyboard Shortcuts &#8984;/</h1>
 
-  <h2>Menu Shortcuts</h2>
-
-  <h3>Comma Chameleon</h3>
-  <ul>
-    <li>Preferences &#8984;,</li>
-    <li>Quit Comma Chameleon &#8984;Q</li>
-  </ul>
-
-  <h3>File</h3>
-  <ul>
-    <li>New &#8984;N - </li>
-    <li>New from Data Package &#8679;&#8984;P - </li>
-    <li>Open &#8984;O - open a Comma separated value file</li>
-    <li>Save &#8984;S - save a Comma separated value file</li>
-    <li>Close file &#8984;W - save data in current tab and close tab</li>
-    <li>Close window &#8679;&#8984;W - save all files and </li>
-  </ul>
-
-  <h3>Edit</h3>
-  <ul>
-    <li>Undo &#8984;Z - </li>
-    <li>Redo &#8984;Y - </li>
-    <li>Cut &#8984;X - </li>
-    <li>Copy &#8984;C - </li>
-    <li>Paste &#8984;V - </li>
-    <li>Select All &#8984;A - </li>
-    <li>Insert Row Above &#8984;I - </li>
-    <li>Insert Row Below &#8984;J - </li>
-    <li>Insert Column Before &#8984;K - </li>
-    <li>Insert Column After &#8984;L - </li>
-  </ul>
-
-  <h3>Tools</h3>
-  <ul>
-    <li>Validate </li>
-    <li>Column Properties </li>
-    <li>Table Properties </li>
-    <li>Data Package Properties </li>
-    <li>Export Data Package </li>
-    <li>Publish to GitHub </li>
-    <li>Header Row </li>
-  </ul>
-
-  <h3>Window</h3>
-  <ul>
-    <li>Show Next Tab ^&#8677;  (control + tab) - Make the next tab the active tab</li>
-    <li>Show Previous Tab &#8679;^&#8677;  (shift + control + tab) - Make the previous tab the active tab  </li>
-  </ul>
 
   <h2>Editor Shortcuts</h2>
   <p>These shortcuts will help you when you're editting data</p>
-  <h3>Navigation</h3>
-  <ul>
-    <li>
-      <kbd>Arrow Up ↑</kbd> – move to the cell above current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Arrow Down ↓</kbd> – move to cell underneath current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Arrow Right →</kbd> – move to the cell on the right side of the current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Arrow Left ←</kbd> – move to the cell on the left side of current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Tab</kbd> – move to the cell on the right side of the current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Tab</kbd> + <kbd>Shift</kbd> – move to the cell on the left side of current active cell (if exists)
-    </li>
-    <li>
-      <kbd>Home</kbd> – move to the first cell in a row
-    </li>
-    <li>
-      <kbd>End</kbd> – move to the last cell in a row
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Home</kbd> – move to the first cell in a column
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>End</kbd> – move to the last cell in a column
-    </li>
-  </ul>
+
+  <h3>Move</h3>
+  <table>
+    <tr>
+      <th style="width:70%">To do this, press...</th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Move to the cell above current active cell (if exists)</td>
+      <td>&#8593;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to cell underneath current active cell (if exists) </td>
+      <td>&#8595;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>move to the cell on the right side of the current active cell (if exists)</td>
+      <td>&#8594;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>move to the cell on the left side of current active cell (if exists)</td>
+      <td>&#8592;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the cell on the right side of the current active cell (if exists)</td>
+      <td>Tab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the cell on the left side of current active cell (if exists)</td>
+      <td>&#8679; Tab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the first cell in a row</td>
+      <td>Home</td>
+      <td>fn &#8594;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the last cell in a row</td>
+      <td>End</td>
+      <td>fn &#8592;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the first cell in a column</td>
+      <td>Cmd + Home</td>
+      <td>&#8984; fn &#8594;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Move to the last cell in a column</td>
+      <td>Cmd + End</td>
+      <td>&#8984; fn &#8592;</td>
+      <td></td>
+    </tr>
+  </table>
+
   <h3>Selection</h3>
-  <ul>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>A</kbd> – select all
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>Arrow Up ↑</kbd> – extend selection of the cell above
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>Arrow Down ↓</kbd> – extend selection of the cell underneath
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>Arrow Right →</kbd> – extend selection of the cell on the right
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>Arrow Left ←</kbd> – extend selection of the cell on the left
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>Home</kbd> – select all cells in the row to the right including the current cell
-    </li>
-    <li>
-      <kbd>Shift</kbd> + <kbd>End</kbd> – select all cells in the row to the left including the current cell
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Shift</kbd> + <kbd>Home</kbd> – select all cells in the column to the top including the current cell
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Shift</kbd> + <kbd>End</kbd> – select all cells in the column to the bottom including the current cell
-    </li>
-  </ul>
+
+  <table>
+    <tr>
+      <th style="width:70%">To do this, press...</th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Select All</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extend selection of the cell above</td>
+      <td>&#8679; &#8595;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extend selection of the cell underneath</td>
+      <td>&#8679; &#8594;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extend selection of the cell on the right</td>
+      <td>&#8679; &#8592;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extend selection of the cell on the left</td>
+      <td>&#8679; &#8593;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>select all cells in the row to the right including the current cell</td>
+      <td>&#8679; Home</td>
+      <td>&#8679; fn &#8594;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Select all cells in the row to the left including the current cell</td>
+      <td>&#8679; End</td>
+      <td>&#8679; fn &#8592;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Select all cells in the column to the top including the current cell</td>
+      <td>Ctrl &#8679; Home</td>
+      <td>&#8984; &#8679; fn &#8594;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Select all cells in the column to the bottom including the current cell</td>
+      <td>Ctrl &#8679; End</td>
+      <td>&#8984; &#8679; fn &#8592;</td>
+      <td></td>
+    </tr>
+  </table>
+
+
   <h3>Editing</h3>
-  <ul>
-    <li>
-      <kbd>Enter</kbd> – insert row below (if in bottom row)
-    </li>
-    <li>
-      <kbd>Tab</kbd> – insert column right (if in rightmost column)
-    </li>
-    <li>
-      <kbd>F2</kbd> – open cell editor
-    </li>
-    <li>
-      <kbd>Esc</kbd> – cancel editing and close cell editor
-    </li>
-    <li>
-      <kbd>Backspace</kbd> – empty cell
-    </li>
-    <li>
-      <kbd>Delete</kbd> – empty cell
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>C</kbd> – copy cell's content
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>X</kbd> – cut cell's content
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>V</kbd> – pastle cell's content
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Enter</kbd> - fill all selected cells with edited cell's value
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Z</kbd> – undo
-    </li>
-    <li>
-      (<kbd>Cmd</kbd> or <kbd>Ctrl</kbd>) + <kbd>Y</kbd> – redo
-    </li>
-  </ul>
+
+  <table>
+    <tr>
+      <th style="width:70%">To do this, press...</th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>insert row below (if in bottom row)</td>
+      <td>Enter</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>insert column right (if in rightmost column)</td>
+      <td>Tab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>open cell editor</td>
+      <td>F2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cancel editing and close cell editor</td>
+      <td>Esc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>empty cell</td>
+      <td>Backspace or Delete</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fill all selected cells with edited cell's value</td>
+      <td>Ctrl Enter</td>
+      <td>&#8984; Enter</td>
+      <td></td>
+    </tr>
+  </table>
+
+
   <h3>Context menu</h3>
-  <ul>
-    <li>
-      <kbd>Arrow Down ↓</kbd> – move to the next option in context menu
-    </li>
-    <li>
-      <kbd>Arrow Up ↑</kbd> – move to the previous option in context menu
-    </li>
-    <li>
-      <kbd>Enter</kbd> – select option from context menu
-    </li>
-  </ul>
+  <p>Right click in a cell to display the context menu.</p>
+  <table>
+    <tr>
+      <th style="width:70%">To do this, press...</th>
+      <th style="width:30%"></th>
+    </tr>
+    <tr>
+      <td>Move to the next option in context menu</td>
+      <td>&#8593;</td>
+    </tr>
+    <tr>
+      <td>Move to the previous option in context menu </td>
+      <td>&#8595;</td>
+    </tr>
+    <tr>
+      <td>Select option from context menu</td>
+      <td>Enter</td>
+    </tr>
+  </table>
+
+
+  <h2>Menu Shortcuts</h2>
+
+  <h3>Comma Chameleon Menu</h3>
+
+  <table>
+    <tr>
+      <th style="width:20%">To do this, press...</th>
+      <th style="width:50%"></th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Set Preferences</td>
+      <td> </td>
+      <td> </td>
+      <td>&#8984;,</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Quit Comma Chameleon</td>
+      <td> </td>
+      <td>Ctrl + Q</td>
+      <td>&#8984; Q</td>
+      <td> </td>
+    </tr>
+  </table>
+
+
+  <h3>File Menu</h3>
+  <table>
+    <tr>
+      <th style="width:20%">To do this, press...</th>
+      <th style="width:50%"></th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>New</td>
+      <td> </td>
+      <td> </td>
+      <td>&#8984; N</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Open</td>
+      <td>Open a Comma separated value file </td>
+      <td> </td>
+      <td>&#8984; O</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Open Data Package </td>
+      <td> </td>
+      <td>Ctrl + </td>
+      <td>&#8679; &#8984; P</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Save</td>
+      <td>Save the data in the current Tab in the default file format selected in Settings/Preferences</td>
+      <td>Ctrl + S</td>
+      <td>&#8984; S</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Save All</td>
+      <td>Save the data in all Tabs in the default file format selected in Settings/Preferences</td>
+      <td></td>
+      <td>&#8997; &#8984; S</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Close Tab</td>
+      <td>Save the data in the current Tab and then close the Tab </td>
+      <td></td>
+      <td>&#8984; W</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Close Window</td>
+      <td>Save the data in all Tabs and the close all Tabs</td>
+      <td></td>
+      <td>&#8679; &#8984; W</td>
+      <td> </td>
+    </tr>
+  </table>
+
+
+  <h3>Edit Menu</h3>
+
+  <table>
+    <tr>
+      <th style="width:20%">To do this, press...</th>
+      <th style="width:50%"></th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Undo</td>
+      <td>Undo the last edit command </td>
+      <td>Ctrl Z </td>
+      <td>&#8984; Z</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Redo</td>
+      <td> </td>
+      <td>Ctrl Y</td>
+      <td>&#8984; Y</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cut</td>
+      <td> </td>
+      <td>Ctrl X</td>
+      <td>&#8984; X</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Copy</td>
+      <td> </td>
+      <td>Ctrl C</td>
+      <td>&#8984; C</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Paste</td>
+      <td> </td>
+      <td>Ctrl V</td>
+      <td>&#8984; V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Select All</td>
+      <td> </td>
+      <td>Ctrl A </td>
+      <td>&#8984; A</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Insert Row Above</td>
+      <td> </td>
+      <td>Ctrl I</td>
+      <td>&#8984; I</td>
+      <td> </td>
+    </tr>
+    <td>Insert Row Below</td>
+    <td> </td>
+    <td>Ctrl M </td>
+    <td>&#8984; M</td>
+    <td> </td>
+    </tr>
+    <tr>
+      <td>Insert Column Left</td>
+      <td> </td>
+      <td>Ctrl J</td>
+      <td>&#8984; J</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Insert Column Right</td>
+      <td> </td>
+      <td>Ctrl K</td>
+      <td>&#8984; K</td>
+      <td> </td>
+  </table>
+
+
+  <h3>Tools Menu</h3>
+
+  <table>
+    <tr>
+      <th style="width:20%">To do this, press...</th>
+      <th style="width:50%"></th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Validate</td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Column Properties </td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Table Properties</td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Data Package Properties</td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Export Data Package</td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Publish to GitHub</td>
+      <td>tbd</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Header Row</td>
+      <td>Toggle the Header Row setting to freeze the first row and use the data and the Column Name property</td>
+      <td> </td>
+      <td></td>
+      <td> </td>
+    </tr>
+  </table>
+
+  <h3>Window Menu</h3>
+  <table>
+    <tr>
+      <th style="width:20%">To do this, press...</th>
+      <th style="width:50%"></th>
+      <th style="width:10%"><i class="fa fa-windows"></i></th>
+      <th style="width:10%"><i class="fa fa-apple"></i></th>
+      <th style="width:10%"><i class="fa fa-linux"></i></th>
+    </tr>
+    <tr>
+      <td>Show Next Tab</td>
+      <td>Make the next tab the active tab</td>
+      <td>Ctrl &#8594;  </td>
+      <td>&#8984; &#8594;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Show Previous Tab</td>
+      <td>Make the previous tab the active tab </td>
+      <td>Ctrl  &#8592;</td>
+      <td>&#8984; &#8592;</td>
+      <td> </td>
+    </tr>
+  </table>
+
 
   <div class="related-topics">
     <h2 id="related-topics">See also</h2>
