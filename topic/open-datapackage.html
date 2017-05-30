@@ -12,31 +12,33 @@
 
   <h1>Open data package</h1>
 
-  <p>You can open a data package file by specifying the character(s) to separate values and indicate line endings. As the file is opened Comma Chameleon guesses the validation rules for each column. You can validate the data using these rules or refine them.
-    Comma Chameleon also checks for <a href="ragged-rows.html">ragged rows</a> on opening the file.</p>
+  <p>You can open a data package file to import multiple data file, their descriptions and validation rules. Some data packages can be used as templates and only contain data descriptions and validation rules. This is useful to help a number of people all create consistent data.</p>
 
-  <h2 id="open-custom-csv">Open a Custom separated file</h2>
-  <p>To open a Comma separated value (CSV) file, either:</p>
+  <h2 id="open-data-package">Open a data package</h2>
+  <p>To open a Data Package file, either:</p>
   <ul>
-    <li>choose File > Open > Custom separated from the menu</li>
-    <li>et file preference. Select a custom file and then drag and drop it onto the Comma Chameleon application </li>
+    <li>choose File > Open > Data Package from the menu</li>
+    <li>use the shortcut</li>
+    <li>Select a data package json file and then drag and drop it onto the Comma Chameleon application </li>
   </ul>
-
-  <h2 id="drag-custom-csv">Drag and drop a Custom separated file</h2>
-  <p>To open a Custom separated value file choose File > Open > Semicolon separated from the menu</p>
-  <ul>
-    <li>choose Comma Chameleon > Preferences from the menu</li>
-    <li>specify the character(s) used to separate values and indicate line endings.</li>
-    <li>select a Custom separated value file and drag and drop it onto the Comma Chameleon application </li>
-  </ul>
+    <p>On opening Data Package:</p>
+    <ul>
+      <li>data tabs opened</li>
+      <li>Column, Table and Data Packages properties set</li>
+      <li>Header row menu option set based on Table property</li>
+    </ul>
+    <p>On opening Data Package with no data:</p>
+    <ul>
+      <li>data tabs opened no header values only</li>
+      <li>Column, Table and Data Packages properties set</li>
+      <li>Header row menu option set based on Table property (should be true - test on empty data package save?)</li>
+    </ul>
 
   <div class="related-topics">
     <h2 id="related-topics">See also</h2>
     <p>At the end of a topic is a list of links to other topics that are related to this one and thus might be of special interest to the user.</p>
     <ul>
-      <li><a href="set-preferences.html" title="">Set preferences</a> allows you to specify a default file type for drag and drop, and save operations.</li>
-      <li><a href="open-datapackage.html" title="">Open data package</a></li> allows you to open custom separate value files described in a data package
-      <li><a href="validate-table" title="">Validate table</a> to validate the data you opened</li>
+      <li><a href="edit-data.html" title="">Edit data</a> </li>
     </ul>
   </div>
 

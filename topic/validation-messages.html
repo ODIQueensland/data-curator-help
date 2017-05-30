@@ -4,8 +4,8 @@
 <head>
   <title>Comma Chameleon Help - Validation messages</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="https://use.fontawesome.com/8515baae5a.js"></script>
-    <script src="../js/w3.js"></script>
+  <script src="https://use.fontawesome.com/8515baae5a.js"></script>
+  <script src="../js/w3.js"></script>
 </head>
 
 <body>
@@ -13,88 +13,231 @@
   <h1>Validation messages</h1>
 
   <p>After you validate the data, you'll may see some message explaining how to improve your CSV file.</p>
-<ul>
-<li>Errors are things you really need to fix, because they'll stop people from being able to use your data</li>
-<li>Warnings are thing you should fix if you can because doing so will help people to use your data</li>
-<li>Information messages are hints and tips of things that could make the data easier to use</li>
- </ul>
-
-<p>we won't delete empty lines or try to fix up values that are in the wrong format. </p>
-<p>If the data appears in a single column, you may have used the incorrect CSV dialect to open the data </p>
-
-handle files up to around 100MB.
-
-Common Errors
-When checking your CSV, we may return one or more of the following errors:
-
-Invalid encoding: if there are any odd characters in a file which could cause encoding errors
-Line breaks: if line breaks are not the same throughout the file
-Undeclared header: if you do not specify in a machine readable way whether or not your CSV has a header row
-Ragged rows: if every row in the file doesn't have the same number of columns
-Blank rows: if there are any blank rows
-Stray/Unclosed quote: if there are any unclosed quotes in the file
-Whitespace: if there is any whitespace between commas and double quotes around fields
-If we get the CSV from a URL, then we also check for these errors:
-
-Not found: if the file doesn't exist (we get a 404 Not Found response)
-Wrong content type: if the content type isn't set text/csv
-Common Warnings
-We also return the following warnings:
-
-Encoding: if you don't use UTF-8 as the encoding for the file
-Check options: if the CSV file only contains a single comma-separated column; this usually means you're using a separator other than a comma
-Inconsistent values: if any column contains inconsistent values, for example if most values in a column are numeric but there's a significant proportion that aren't
-Empty column name: if all the columns don't have a name
-Duplicate column name: if all the column names aren't unique
-Title row: if there appears to be a title field in the first row of the CSV
-and if we get the CSV from a URL, we return these warnings:
-
-No content type: if you don't provide a Content-Type HTTP header
-No encoding: if you don't specify an encoding with a charset parameter
-Excel: if it looks like you're serving an Excel file rather than CSV (because the suffix for the file is .xls and there is no 'Content-Type' header)
-Extra Information
-Non RFC line breaks: We let you know if you use line breaks that aren't CRLF (Windows line endings). That's because RFC4180, which is the closest thing to standard CSV that there is, says that you should use CRLF line endings.
-Assumed header: We assume that a header is present.
-
----
-
-Use of an unknown data type will result in the column failing to validate.
-
-CSVLint will give schema validation error and warning messages if these constraints aren't met. In addition we check that each column name in the CSV file is the same as the name for the column in the same position in the schema.
-
-Common Errors
-We check the following things about the schema that you provide:
-
-Missing value: a column marked as `required` in the schema has no value
-Minimum length: a column with a `minLength` constraint has a value that is too short
-Maximum length: a column with a `maxLength` constraint has a value that is too long
-Pattern: a column with a `pattern` constraint has a value that doesn't match the regular expression
-Invalid regex: a regular expression pattern defined in the schema is not in valid regex form
-Unique: a column with a `unique` constraint contains non-unique values
-Below minimum: a column with a `minimum` constraint contains a value that is below the minimum
-Above maximum: a column with a `maximum` constraint contains a value that is above the maximum
-Common Warnings
-Header name: the header in the CSV has a column name that doesn't match the schema
-Missing column: a row in the CSV file has a missing column, that is specified in the schema
-Extra column: a row in the CSV file has an extra column
-
----
-<div class="related-topics">
-  <h2 class="related-topics">See also</h2>
   <ul>
-     <li><a href="validate-table.html" title="">Validate table</a> </li>
-     <li><a href="validate-table.html" title="">Validate column</a> to validate the data open in the current tab</li>
-     <li><a href="validate-table.html" title="">Set column properties table</a> </li>
-     <li><a href="validate-table.html" title="">How to write a good CSV</a>b</li>
-     <li><a href="validate-table.html" title="">Set column properties table</a> </li>
+    <li>Errors are things you really need to fix, because they'll stop people from being able to use your data</li>
+    <li>Warnings are thing you should fix if you can because doing so will help people to use your data</li>
+    <li>Information messages are hints and tips of things that could make the data easier to use</li>
   </ul>
-</div>
 
-<div w3-include-html="../includes/topic-footer.html"></div>
+  <p>we won't delete empty lines or try to fix up values that are in the wrong format. </p>
+  <p>If the data appears in a single column, you may have used the incorrect CSV dialect to open the data </p>
 
-<script>
-  w3.includeHTML();
-</script>
+  <p>handle files up to around 100MB.</p>
+  <h2>CSV Errors</h2>
+  <h3>Common Errors</h3>
+  <p>When checking your CSV, we may return one or more of the following errors:</p>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Invalid encoding</td>
+      <td>if there are any odd characters in a file which could cause encoding errors</td>
+    </tr>
+    <tr>
+      <td>Line breaks</td>
+      <td>if line breaks are not the same throughout the file</td>
+    </tr>
+    <tr>
+      <td>Undeclared header</td>
+      <td>if you do not specify in a machine readable way whether or not your CSV has a header row</td>
+    </tr>
+    <tr>
+      <td>Ragged rows</td>
+      <td>if every row in the file doesn't have the same number of columns</td>
+    </tr>
+    <tr>
+      <td>Blank rows</td>
+      <td>if there are any blank rows</td>
+    </tr>
+    <tr>
+      <td>Stray/Unclosed quote</td>
+      <td>if there are any unclosed quotes in the file</td>
+    </tr>
+    <tr>
+      <td>Whitespace</td>
+      <td>if there is any whitespace between commas and double quotes around fields</td>
+    </tr>
+  </table>
+
+  <p>If we get the CSV from a URL, then we also check for these errors:</p>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Not found</td>
+      <td>if the file doesn't exist (we get a 404 Not Found response)</td>
+    </tr>
+    <tr>
+      <td>Wrong content type</td>
+      <td>if the content type isn't set text/csv</td>
+    </tr>
+  </table>
+
+  <h3>Common Warnings</h3>
+  <p>We also return the following warnings:</p>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Encoding</td>
+      <td>if you don't use UTF-8 as the encoding for the file</td>
+    </tr>
+    <tr>
+      <td>Check options</td>
+      <td>if the CSV file only contains a single comma-separated column; this usually means you're using a separator other than a comma</td>
+    </tr>
+    <tr>
+      <td>Inconsistent values</td>
+      <td>if any column contains inconsistent values, for example if most values in a column are numeric but there's a significant proportion that aren't</td>
+    </tr>
+    <tr>
+      <td>Empty column name</td>
+      <td>if all the columns don't have a name</td>
+    </tr>
+    <tr>
+      <td>Duplicate column name</td>
+      <td>if all the column names aren't unique</td>
+    </tr>
+    <tr>
+      <td>Title row</td>
+      <td>if there appears to be a title field in the first row of the CSV</td>
+    </tr>
+  </table>
+
+
+  <p>and if we get the CSV from a URL, we return these warnings:</p>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>No content type</td>
+      <td>if you don't provide a Content-Type HTTP header</td>
+    </tr>
+    <tr>
+      <td>No encoding</td>
+      <td>if you don't specify an encoding with a charset parameter</td>
+    </tr>
+    <tr>
+      <td>Excel</td>
+      <td>if it looks like you're serving an Excel file rather than CSV (because the suffix for the file is .xls and there is no 'Content-Type' header)</td>
+    </tr>
+  </table>
+
+  <h3>Extra Information</h3>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Non RFC line breaks</td>
+      <td>We let you know if you use line breaks that aren't CRLF (Windows line endings). That's because RFC4180, which is the closest thing to standard CSV that there is, says that you should use CRLF line endings.</td>
+    </tr>
+    <tr>
+      <td>Assumed header</td>
+      <td>We assume that a header is present</td>
+    </tr>
+  </table>
+
+  <h2>Schema validation</h2>
+  <p>Use of an unknown data type will result in the column failing to validate.</p>
+
+  <p>CSVLint will give schema validation error and warning messages if these constraints aren't met. In addition we check that each column name in the CSV file is the same as the name for the column in the same position in the schema.</p>
+
+  <h3>Common Errors</h3>
+  <p>We check the following things about the schema that you provide:</p>
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Missing value </td>
+      <td>a column marked as `required` in the schema has no value </td>
+    </tr>
+    <tr>
+      <td>Minimum length </td>
+      <td>a column with a `minLength` constraint has a value that is too short</td>
+    </tr>
+    <tr>
+      <td>Maximum length </td>
+      <td>a column with a `maxLength` constraint has a value that is too long </td>
+    </tr>
+    <tr>
+      <td>Pattern </td>
+      <td>a column with a `pattern` constraint has a value that doesn't match the regular expression </td>
+    </tr>
+    <tr>
+      <td>Invalid regex </td>
+      <td>a regular expression pattern defined in the schema is not in valid regex form</td>
+    </tr>
+    <tr>
+      <td>Unique </td>
+      <td>a column with a `unique` constraint contains non-unique values </td>
+    </tr>
+    <tr>
+      <td>Below minimum </td>
+      <td>a column with a `minimum` constraint contains a value that is below the minimum </td>
+    </tr>
+    <tr>
+      <td>Above maximum </td>
+      <td>a column with a `maximum` constraint contains a value that is above the maximum </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </table>
+
+  <h3>Common Warnings</h3>
+
+  <table>
+    <tr>
+      <th style="width:25%"></th>
+      <th style="width:75%"></th>
+    </tr>
+    <tr>
+      <td>Header name </td>
+      <td>the header in the CSV has a column name that doesn't match the schema </td>
+    </tr>
+    <tr>
+      <td>Missing column </td>
+      <td>a row in the CSV file has a missing column, that is specified in the schema </td>
+    </tr>
+    <tr>
+      <td>Extra column </td>
+      <td>a row in the CSV file has an extra column </td>
+    </tr>
+  </table>
+
+  <div class="related-topics">
+    <h2 class="related-topics">See also</h2>
+    <ul>
+      <li><a href="validate-table.html" title="">Validate table</a> </li>
+      <li><a href="validate-table.html" title="">Validate column</a> to validate the data open in the current tab</li>
+      <li><a href="validate-table.html" title="">Set column properties table</a> </li>
+      <li><a href="validate-table.html" title="">How to write a good CSV</a>b</li>
+      <li><a href="validate-table.html" title="">Set column properties table</a> </li>
+    </ul>
+  </div>
+
+  <div w3-include-html="../includes/topic-footer.html"></div>
+
+  <script>
+    w3.includeHTML();
+  </script>
 
 </body>
 
