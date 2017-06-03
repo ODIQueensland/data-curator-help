@@ -54,6 +54,16 @@ div.footer a {
   font-size: 80%;
 }
 
+.footer-left {
+  float: left;
+  color: white;
+}
+
+.footer-right {
+  float: right;
+  color: white;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
