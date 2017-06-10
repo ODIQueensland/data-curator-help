@@ -1,25 +1,52 @@
 <h1 id="set-table-properties">Set Table properties <i class="fa fa-table"></i></h1>
 <!-- TO DO: Detect platform to adjust help text -->
 
-<p>When you've finished working with the data, you can save your changes and close the file using any of the steps below. </p>
 
-
-<h2>Close data in all Tabs</h2>
-<p>To close the data in all Tabs and keep Comma Chameleon open, choose File > Close all Tabs from the menu.</p>
-
-<h2>Close Comma Chameleon</h2>
-<p>To close all the data in all Tabs and quit Comma Chameleon, either:</p>
+<h2>Set table properties</h2>
+<p>To set table properties either:</p>
 <ul>
-  <li>choose Comma Chameleon > Quit Comma Chameleon from the menu. </li>
-  <li>press Shift+Command-W</li>
+  <li>choose Tools > Set table properties</li>
+  <li>choose Table <i class="fa fa-table"></i> from the toolbar</i>
+  </li>
 </ul>
+
+<h3>Path</h3>
+<p>http://specs.frictionlessdata.io/data-resource/#path-data-in-files</p>
+
+<h3>Name</h3>
+<p>http://specs.frictionlessdata.io/data-resource/#name</p>
+
+<h3>Title</h3>
+<p>Name, path, title</p>
+<p></p>
+
+<h3>Delimiter (Separator)</h3>
+<p>...</p>
+<h3>Quote Character (Text Delimiter)</h3>
+<p>...</p>
+<h3>Header Row</h3>
+<p>...</p>
+<h3>lineTerminator</h3>
+<p>specifies the character sequence which should terminate rows. Default = \r\n</p>
+<h3>doubleQuote</h3>
+<p>controls the handling of quotes inside fields. If true, two consecutive quotes should be interpreted as one. Default = true</p>
+<h3>escapeChar</h3>
+<p>specifies a one-character string to use for escaping (for example, \), mutually exclusive with quoteChar. Not set by default</p>
+<h3>nullSequence</h3>
+<p>specifies the null sequence (for example \N). Not set by default</p>
+<h3>skipInitialSpace</h3>
+<p>specifies how to interpret whitespace which immediately follows a delimiter; if false, it means that whitespace immediately after a delimiter should be treated as part of the following field. Default = true</p>
+<h3>caseSensitiveHeader</h3>
+<p>indicates that case in the header is meaningful. For example, columns CAT and Cat should not be equated. Default = false</p>
+<h3>csvddfVersion</h3>
+<p>a number, in n.n format, e.g., 1.0. If not present, consumers should assume latest schema version.</p>
 
 <div class="related-topics">
 
   <h2 class="related-topics" id="related-topics">See also</h2>
   <p>At the end of a topic is a list of links to other topics that are related to this one and thus might be of special interest to the user.</p>
   <ul>
-    <li><a href="set-column-properties.html" title="">Set column properties</a> </li>
-    <li><a href="set-datapackage-properties.html" title="">Set data package properties</a> </li>
+    <li><a href="http://specs.frictionlessdata.io/data-resource/">Frictionless Data - Data Resource</a> </li>
+    <li><a href="http://specs.frictionlessdata.io/csv-dialect/">Frictionless Data - CSV Dialect specification</a> </li>
   </ul>
 </div>
