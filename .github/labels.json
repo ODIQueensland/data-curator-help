@@ -1,0 +1,43 @@
+[{
+  "name": "admin:duplicate",
+  "color": "cccccc"
+}, {
+  "name": "admin:invalid",
+  "color": "cccccc"
+}, {
+  "name": "admin:wont-fix",
+  "color": "cccccc"
+}, {
+  "name": "status:requires-replication",
+  "color": "#e6e6e6"
+}, {
+  "name": "status:in-progress",
+  "color": "#e6e6e6"
+}, {
+  "name": "status:on-hold",
+  "color": "#e6e6e6"
+}, {
+  "name": "feedback:feature-request",
+  "color": "e6007c"
+}, {
+  "name": "feedback:help-wanted",
+  "color": "e6007c"
+}, {
+  "name": "feedback:question",
+  "color": "e6007c"
+}, {
+  "name": "problem:bug",
+  "color": "d60303"
+}, {
+  "name": "i:optimisation",
+  "color": "00b6ff"
+}, {
+  "name": "env:macOS",
+  "color": "d4c5f9"
+}, {
+  "name": "env:windows",
+  "color": "d4c5f9"
+}, {
+  "name": "env:linux",
+  "color": "d4c5f9"
+}]
