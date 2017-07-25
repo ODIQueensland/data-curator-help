@@ -1,2 +1,2 @@
 # Data Curator Help
-draft help pages for the new [Data Curator](https://github.com/ODIQueensland/data-curator)
+[Help pages](https://odiqueensland.github.io/data-curator-help/) for [Data Curator](https://github.com/ODIQueensland/data-curator).
