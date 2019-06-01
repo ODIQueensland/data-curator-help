@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  background-color: #00b6ff;
+  background-color: #0DBC37;
   color: #ffffff;
   padding: 15px;
 }
@@ -41,7 +41,7 @@ dd {
 }
 
 div.footer {
-  background: #00b6ff;
+  background: #0DBC37; 
   color: white;
   line-height: 50px;
   padding: 0 20px;
@@ -79,7 +79,7 @@ table td {
 }
 
 table th {
-  background-color: #00b6ff;
+  background-color: #0DBC37;
   color: white;
   text-emphasis: bold;
   text-align: left;
