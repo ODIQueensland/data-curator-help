@@ -39,7 +39,7 @@ div.header {
   color: white;
   line-height: 50px;
   padding: 0 20px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 div.footer {
@@ -81,7 +81,7 @@ table td {
 }
 
 table th {
-  background-color: #eee;
+  background-color: #bbb;
   color: white;
   text-emphasis: bold;
   text-align: left;
