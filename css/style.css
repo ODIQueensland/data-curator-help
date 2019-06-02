@@ -81,8 +81,7 @@ table td {
 }
 
 table th {
-  background-color: #0DBC37;
-  color: white;
+  background-color: #bbb;
   text-emphasis: bold;
   text-align: left;
   padding: 10px;
