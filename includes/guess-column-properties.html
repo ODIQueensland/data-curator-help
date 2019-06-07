@@ -1,12 +1,32 @@
 <h2 id="guess-column-properties">Guess column properties</h2>
 
-<p>When you create a data file, kick start validate by guessing the data types. </p>
+<p>After adding or opening a data table and setting the Header Row, you can use Guess Column Properties to automatically fill in the name, data type, and format properties for each column in the data. The data type and format are used to Validate the data.</p>
+<ul>
+  <li>The name property comes from the values in the first row of date</li>
+  <li>The data type (e.g. string, integer, date) and format (e.g. email, dd/mm/yyyy) are inferred by reading a sample of the data in the column.</li>
+</ul>
+
+<h3>Guess Column Properties</h3>
+<ul>
+  <li>Add column names to the first row if they are not already present in the data and set the Header Row</li>
+  <li>Choose Tools &gt; Guess Column Properties, to automatically fill in the name, data type, and format properties for each column.</li>
+  <li>A panel will display to indicate the guess was successful, or display any errors.</li>
+</ul>
+
+<h3>Review the Guessed Column Properties</h3>
+
+<ul>
+  <li>Choose Tools &gt; Set Column Properties, to see the values that where guessed. </li>
+  <li>Move the cursor from column to column to see the properties set for each column.</li>
+  <li>Edit the data type or format if the guess was wrong.</li>
+</ul>
 
 <div class="related-topics">
   <h3 class="related-topics" id="related-topics">See also:</h3>
   <p>At the end of a topic is a list of links to other topics that are related to this one and thus might be of special interest to the user.</p>
   <ul>
-    <li><a href="validate-table.html">Validate data</a> </li>
-    <li><a href="edit-data.html">Edit data</a> </li>
+    <li><a href="header-row.html" title="">Set Header Row</a> to use the values in the first row as column names and freeze the first row when scrolling. </li>
+    <li><a href="set-column-properties.html" title="">Set Column Properties</a> allow you enter other information about each column that can't be guessed.</li>
+    <li><a href="validate-table.html" title="">Validate Table</a> test the data against the data type, format, and constraints. </li>
   </ul>
 </div>
