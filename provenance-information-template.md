@@ -12,6 +12,7 @@ A short description of the dataset (the first sentence and first paragraph shoul
 - What is the sample size?
 - What instruments were used to collect the data? 
 - Where any domain-specific vocabularies used? Provide a reference to the vocabulary.
+- How should null values in the data be interpreted - as an unknown value, missing value, or the value is not applicable?
 
 ### When was the data collected?
 
@@ -20,10 +21,6 @@ A short description of the dataset (the first sentence and first paragraph shoul
 ### Where was the data collected?
 
 - Provide the geographic area this data spans (its spatial coverage). 
-
-### What does null mean?
-
-- How should null values in the data be interpreted - as an unknown value, missing value, or the value is not applicable?
 
 ### How was the data processed for publication?
 
