@@ -1,47 +1,51 @@
 <h2 id="set-table-properties">Set Table properties</h2>
 
-<p>To set table properties either:</p>
+<p>Describe the Table so others can understand how they can use it. The Table must have a name. It is good practice to provide a title and description. </p>
+
+<h3>Set table properties </h3>
 <ul>
-  <li>choose Tools > Set table properties</li>
-  <li>choose Table <i class="fa fa-table"></i> from the toolbar</li>
+  <li>Choose Tools &gt; Set Table Properties, from the menu to display the Data Package panel </li>
+  <li>Enter properties to describe the Data Package</li>
+  <li>Data Package properties are saved when you export the data package</li>
 </ul>
 
-<h3>Path</h3>
-<p>http://specs.frictionlessdata.io/data-resource/#path-data-in-files</p>
+<h4>Required properties</h4>
+<ul>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#name" target="_blank">Name</a> - a short url-usable (and preferably human-readable) name of the table. This MUST be lower-case and contain only alphanumeric characters along with ".", "_" or "-" characters.</li>
 
-<h3>Name</h3>
-<p>http://specs.frictionlessdata.io/data-resource/#name</p>
+</ul>
 
-<h3>Title</h3>
-<p>Name, path, title</p>
-<p></p>
+<h4>Recommended properties</h4>
+<ul>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Title</a> - a title for the table.</li>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Description</a> - a summary of information in the table. </li>
+</ul>
 
-<h3>Delimiter (Separator)</h3>
-<p>...</p>
-<h3>Quote Character (Text Delimiter)</h3>
-<p>...</p>
-<h3>Header Row</h3>
-<p>...</p>
-<h3>lineTerminator</h3>
-<p>specifies the character sequence which should terminate rows. Default = \r\n</p>
-<h3>doubleQuote</h3>
-<p>controls the handling of quotes inside fields. If true, two consecutive quotes should be interpreted as one. Default = true</p>
-<h3>escapeChar</h3>
-<p>specifies a one-character string to use for escaping (for example, \), mutually exclusive with quoteChar. Not set by default</p>
-<h3>nullSequence</h3>
-<p>specifies the null sequence (for example \N). Not set by default</p>
-<h3>skipInitialSpace</h3>
-<p>specifies how to interpret whitespace which immediately follows a delimiter; if false, it means that whitespace immediately after a delimiter should be treated as part of the following field. Default = true</p>
-<h3>caseSensitiveHeader</h3>
-<p>indicates that case in the header is meaningful. For example, columns CAT and Cat should not be equated. Default = false</p>
-<h3>csvddfVersion</h3>
-<p>a number, in n.n format, e.g., 1.0. If not present, consumers should assume latest schema version.</p>
+<h4>Optional properties</h4>
+<ul>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#sources" target="_blank">Sources</a> - the raw sources for this data package</li>
+  <ul>
+    <li>Move the pointer over the <i class="fas fa-plus"></i> Add source button and click it to show the data entry boxes.</li>
+    <li>Enter values</li>
+    <li>Click the <i class="fas fa-plus"></i> Add source button again to add another source</li>
+    <li>Click the <i class="fas fa-minus-square"></i> Delete button to remove a source</li>
+  </ul>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Licenses</a> help people understand how they can use the data. Licence is inherited from the Data Package unless you specify it here.</li>
+  <ul>
+    <li>Move the pointer over the Licence you wish to set as a default and click it to select it.</li>
+    <li>Hold down Ctrl/Cmd to select more than one Licence.</li>
+    <li>The Data Package Licence is inherited by all the tables in the package unless you explictly apply a licence to a table using Set Table Properties.</li>
+  </ul>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Primary Key</a> </li>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Foreign Keys</a> </li>
+  <li><a href="https://frictionlessdata.io/specs/data-resource/#optional-properties" target="_blank">Missing Values</a> </li>
 
+</ul>
 <div class="related-topics">
   <h3 class="related-topics" id="related-topics">See also:</h3>
   <p>At the end of a topic is a list of links to other topics that are related to this one and thus might be of special interest to the user.</p>
   <ul>
-    <li><a href="http://specs.frictionlessdata.io/data-resource/">Frictionless Data - Data Resource</a> </li>
-    <li><a href="http://specs.frictionlessdata.io/csv-dialect/">Frictionless Data - CSV Dialect specification</a> </li>
+    <li><a href="set-datapackage-properties.html" title="">Set Data Package Properties</a> </li>
+    <li><a href="export-datapackage.html">Export Data Package</a> </li>
   </ul>
 </div>
