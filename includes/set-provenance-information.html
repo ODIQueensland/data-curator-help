@@ -1,41 +1,79 @@
 <h2 id="set-provenance-information">Set Provenance Information </h2>
 
-<p>Help people using the data determine if it's fit for their purpose by providing provenance information. Set and Preview</p>
+<p>Providing Provenance Information helps people understanding why and how the data was created so they can assess the potential risks in reusing the data for another purpose.</p>
 
 <h3>Set provenance information </h3>
+<ul>
+  <li>Choose Tools &gt; Provenance Information, to open the provenance information panel.</li>
+  <li>Enter the provenance information in plain text or format it using <a href="https://commonmark.org/help/">Markdown</a>. </li>
+  <li>Provenance information is saved when you export the data package</li>
+</ul>
 
-<p>Choose Tools &gt; Provenance Information, to open the provenance information panel. Enter the provenance information in plain text or format it using <a href="https://commonmark.org/help/">Markdown</a>. </p>
+<h3>Preview provenance information </h3>
+<ul>
+  <li>Move the pointer over the Preview <i class="fas fa-search"></i> button and click it to show the formatted Markdown text.</li>
+  <li>Move the pointer over the Edit <i class="fas fa-pencil"></i> button and click it to return to edit the text.</li>
+</ul>
+
+<h3>Recommended provenance information </h3>
 
 <ul>
   <li>Consider including the information described below.</li>
-  <li><a href="../provenance-information-template.md">Download a Provenance Information template</a> to edit and paste into the Provenance Information.</li>
-
+  <li><a href="../provenance-information-template.md">Download a Provenance Information template</a> to paste into the Provenance Information panel.</li>
   </ul>
+  
+<h4>Abstract</h4>
 
-<h4>Why was the data created</h4>
-<p>describe why this information is helpful</p>
+  A short description of the dataset (the first sentence and first paragraph should be extractable to provide short standalone descriptions)
 
-<h4>How was the data collected</h4>
-<p>describe why this information is helpful</p>
+<h4>Why was the dataset created?</h4>
 
-<h4>When was the data collected</h4>
-<p>describe why this information is helpful</p>
+  <ul>
+<li>Why was this data originally collected? </li>
+<li>Is the data a one-off release or part of an ongoing series?</li>
+<li>If relevant, reference legislation </li>
+</ul>
 
-<h4>Where was the data collected</h4>
-<p>describe why this information is helpful</p>
+<h4>How was the data collected?</h4>
+<ul>
+  <li>What methodolody was used to collect the data? </li>
+  <li>What is the sample size?</li>
+  <li>What instruments were used to collect the data? </li>
+  <li>Where any domain-specific vocabularies used? Provide a reference to the vocabulary.</li>
+  <li>How should null values in the data be interpreted - as an unknown value, missing value, or the value is not applicable?</li>
+</ul>
 
-<h4>Which instruments were used to collect the data</h4>
-<p>describe why this information is helpful</p>
+<h4>When was the data collected?</h4>
+<ul>
+  <li>Provide the time this data spans (its temporal coverage). </li>
+</ul>
 
-<h4>What does null mean in data</h4>
-<p>describe why this information is helpful</p>
+<h4>Where was the data collected?</h4>
+<ul>
+  <li>Provide the geographic area this data spans (its spatial coverage). </li>
+</ul>
 
-<h4>Other information</h4>
-<p>describe why this information is helpful</p>
+<h4>How was the data processed for publication?</h4>
+<ul>
+  <li>Was the data corrected, transformed or aggregated after collection</li>
+  <li>If the data has been aggregated, what level of detail can be expected</li>
+  <li>Reference the code used to process the data</li>
+  <li>What is the delay between collecting and publishing the data?</li>
+</ul>
 
-<h3>Preview provenance information </h3>
+<h4>How to collaborate on the data</h4>
+<ul>
+  <li>Provide publisher contact details for data consumers to ask questions about the dataset</li>
+  <li>Provide a URL to the web site where data consumers can provide feedback, highlight errors, discuss, or be notified of changes to  the dataset </li>
+</ul>
 
-<p>describe why this information is helpful</p>
+<h4>Other comments</h4>
+<ul>
+  <li>State any known caveats or limitations in the data</li>
+  <li>List any related data  </li>
+  <li>Provide the location where visualisations or data can be previewed</li>
+  <li>Provide the location where data can be accessed in other formats or via an API</li>
+</ul>
 
 <div class="related-topics">
   <h3 class="related-topics" id="related-topics">See also:</h3>
@@ -45,5 +83,6 @@
     <li><a href="set-table-properties.html" title="">Set Table Properties</a> </li>
     <li><a href="set-datapackage-properties.html" title="">Set Data Package Properties</a> </li>
     <li><a href="save-datapackage.html" title="">Save Data Package</a> </li>
+        <li><a href="https://frictionlessdata.io/docs/publish-faq/#readme" title="">Frictionless Data Readme FAQ</a> </li>    
   </ul>
 </div>
