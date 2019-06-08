@@ -1,73 +1,54 @@
 <h2 id="set-datapackage-properties">Set Data Package properties</h2>
 
-<p>To set Data Package properties either:</p>
+<p>Describe the Data Package so others can understand how they can use it. The Data Package must have a name and a licence. It is good practice to provide a title and description. Data Curator applies stricter requirements than the <a href="https://frictionlessdata.io/specs/data-package/">Frictionless Data specification</a> to ensure you share high quality open data.</p>
+
+<h3>Set provenance information </h3>
 <ul>
-  <li>choose Tools > Set Data Package properties</li>
-  <li>choose Package <i class="fa fa-gift"></i> from the toolbar</li>
+  <li>Choose Tools &gt; Set Data Package Properties, from the menu to display the Data Package panel </li>
+  <li>Enter properties to describe the Data Package</li>
+  <li>Data Package properties are saved when you export the data package</li>
 </ul>
-<h3>Required properties</h3>
-<h4>Resources</h4>
-<p></p>
+
+<h4>Required properties</h4>
+<ul>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#name">Name</a> - a short url-usable (and preferably human-readable) name of the package. This MUST be lower-case and contain only alphanumeric characters along with ".", "_" or "-" characters.</li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#licenses">Licenses</a> help people understand how they can use the data</li>
+  <ul>
+    <li>Move the pointer over the Licence you wish to set as a default and click it to select it.</li>
+    <li>Hold down Ctrl/Cmd to select more than one Licence.</li>
+    <li>The Data Package Licence is inherited by all the tables in the package unless you explictly apply a licence to a table using Set Table Properties.</li>
+  </ul>
+</ul>
 
 <h3>Recommended properties</h3>
-<h4>Name</h4>
-<p>http://specs.frictionlessdata.io/data-package/#name</p>
-
-<h4>Id</h4>
-<p>http://specs.frictionlessdata.io/data-package/#id</p>
-
-<h4>Licenses</h4>
-<p>Name, path, title</p>
-<p>http://specs.frictionlessdata.io/data-package/#licenses</p>
-
-<h4>Profile</h4>
-<p>Profile is automatically set to "tabular-data-package".</p>
-<p>http://specs.frictionlessdata.io/data-package/#profile</p>
+<ul>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#title">Title</a> - a title or one sentence description of this package.</li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#description">Description</a> - the first paragraph should be usable as summary information for the package. </li>
+</ul>
 
 <h3>Optional properties</h3>
-
-<h4>Title</h4>
-<p>http://specs.frictionlessdata.io/data-package/#title</p>
-
-<h4>Description</h4>
-<p>http://specs.frictionlessdata.io/data-package/#description - using Commonmark.</p>
-
-<h4>Homepage</h4>
-<p>http://specs.frictionlessdata.io/data-package/#homepage - won't have one initially. May have dataset landing page in CKAN after initial release.</p>
-
-<h4>Version</h4>
-<p>http://specs.frictionlessdata.io/data-package/#version</p>
-<p>It is recommended that Data Package version follow the <a href="http://semver.org">semanitic versioning</a> approach, i.e. Given a version number Major.Minor.Patch, increment the:</p>
 <ul>
-  <li>Major version when either the general form of the data being produced changes or there is a change in the data source.</li>
-<li>Minor version when anything else that touches the data changes E.g., changes in data location, corrections to the missingValues field, etc.</li>
-<li>Patch version when there are minor metadata changes.</li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#id">Id</a> - a  globally unique identifiers, e.g. UUIDs and DOIs. </li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#version">Version</a> - follow the <a href="">version pattern</a> to indicate the nature of the change between data package releases.</li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#sources">Sources</a> - the raw sources for this data package</li>
+  <ul>
+    <li>Move the pointer over the <i class="fas fa-plus"></i> Add source button and click it to show the data entry boxes.</li>
+    <li>Enter values</li>
+    <li>Click the <i class="fas fa-plus"></i> Add source button again to add another source</li>
+    <li>Click the <i class="fas fa-minus-square"></i> Delete button to remove a source</li>
+  </ul>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#contributors">Contributors</a> - the people or organizations who contributed to this Data Package.  </li>
+  <ul>
+    <li>Move the pointer over the <i class="fas fa-plus"></i> Add contribitor button and click it to show the data entry boxes.</li>
+    <li>Enter values to set the defaults</li>
+    <li>Click the <i class="fas fa-plus"></i> Add contribitor button again to add another default contributor</li>
+    <li>Click the <i class="fas fa-minus-square"></i> Delete button to remove a default contributor</li>
+  </ul>
 </ul>
-
-<h4>Sources</h4>
-<p>http://specs.frictionlessdata.io/data-package/#sources</p>
-
-<h4>Contributors</h4>
-<p>http://specs.frictionlessdata.io/data-package/#contributors</p>
-
-<h4>Keywords</h4>
-<p>http://specs.frictionlessdata.io/data-package/#keywords </p>
-<ul>
-  <li>don't bother, leave for CKAN, or</li>
-  <li>does CKAN Data Package extension use this?</li>
-</ul>
-<h4>Image</h4>
-<p>http://specs.frictionlessdata.io/data-package/#image - what platforms use an image?</p>
-
-<h4>Created</h4>
-<p><a href="http://specs.frictionlessdata.io/data-package/#created">Created</a> is the datetime the package was created. Datetime is represented as a string conforming to <a href="https://tools.ietf.org/html/rfc3339#section-5.6">RFC3339</a>.
 
 <div class="related-topics">
   <h3 class="related-topics" id="related-topics">See also:</h3>
-  <p>At the end of a topic is a list of links to other topics that are related to this one and thus might be of special interest to the user.</p>
   <ul>
-    <li><a href="export-datapackage.html" title="">Export a Data Package</a> </li>
-    <li><a href="publish-datapackage.html" title="">Publish the Data Package to GitHub and generate a website</a> </li>
-    <li><a href="http://specs.frictionlessdata.io/data-package/" >Frictionless Data - Data Package specification</a> </li>
+    <li><a href="export-datapackage.html">Export Data Package</a> </li>
   </ul>
 </div>
