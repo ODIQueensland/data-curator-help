@@ -6,7 +6,7 @@
 <ul>
   <li>Choose Tools &gt; Set Table Properties, from the menu to display the Data Package panel </li>
   <li>Enter properties to describe the Data Package</li>
-  <li>Data Package properties are saved when you export the data package</li>
+  <li>Table properties are saved when you export the data package</li>
 </ul>
 
 <h4>Required properties</h4>
@@ -23,7 +23,7 @@
 
 <h4>Optional properties</h4>
 <ul>
-  <li><a href="http://specs.frictionlessdata.io/data-package/#sources" target="_blank">Sources</a> - the raw sources for this data package</li>
+  <li><a href="http://specs.frictionlessdata.io/data-package/#sources" target="_blank">Sources</a> - the raw sources for this data</li>
   <ul>
     <li>Move the pointer over the <i class="fas fa-plus"></i> Add source button and click it to show the data entry boxes.</li>
     <li>Enter values</li>
@@ -34,11 +34,18 @@
   <ul>
     <li>Move the pointer over the Licence you wish to set as a default and click it to select it.</li>
     <li>Hold down Ctrl/Cmd to select more than one Licence.</li>
-    <li>The Data Package Licence is inherited by all the tables in the package unless you explictly apply a licence to a table using Set Table Properties.</li>
   </ul>
-  <li><a href="https://frictionlessdata.io/specs/table-schema/#primary-key" target="_blank">Primary Key</a> - #todo </li>
-  <li><a href="https://frictionlessdata.io/specs/table-schema/#foreign-keys" target="_blank">Foreign Keys</a> - #todo </li>
-  <li><a href="https://frictionlessdata.io/specs/table-schema/#missing-values" target="_blank">Missing Values</a> - #todo</li>
+  <li><a href="https://frictionlessdata.io/specs/table-schema/#primary-key" target="_blank">Primary Key</a> is a field or set of fields that uniquely identifies each row in the table.</li>
+  <ul>
+    <li>Move the pointer over the field you wish to set as the Primary Key and click it to select it.</li>
+    <li>Hold down Ctrl/Cmd to select more than one field.</li>
+  </ul>
+  <li><a href="https://frictionlessdata.io/specs/table-schema/#foreign-keys" target="_blank">Foreign Keys</a> is a field (or fields) in this table that references a similar field (or fields) in another table in the Data Package. Data Curator implements the [Foreign Keys to Data Packages](https://frictionlessdata.io/specs/patterns/#table-schema:-foreign-keys-to-data-packages) pattern so you can link to a table in another Data Package published at a URL.</li>
+  <li><a href="https://frictionlessdata.io/specs/table-schema/#missing-values" target="_blank">Missing Values</a> are sometimes indicated by using a special value e.g. `-`, `NaN`, `0`, `-9999` </li>
+  <ul>
+    <li>Enter the value used to represent missing values. This will tell consumers of the data to treat that value as `null`.</li>
+    <li>If more than one value is used to represent missing values, enter them separated by a comma.</li>
+  </ul>
 
 </ul>
 <div class="related-topics">
