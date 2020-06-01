@@ -16,15 +16,15 @@ If you'd like to discuss other options, please [contact us](http://queensland.th
 
 ## Contribute Ideas and Feature Requests
 
-Your idea for a feature addition may already exist on our [ issues backlog](https://github.com/ODIQueensland/data-curator/issues). If the gist of your idea isn't there:
-- [add an issue](https://github.com/ODIQueensland/data-curator/issues) - we'll label it with `f:feature-request`, or
+Your idea for a feature addition may already exist on our [ issues backlog](https://github.com/qcif/data-curator/issues). If the gist of your idea isn't there:
+- [add an issue](https://github.com/qcif/data-curator/issues) - we'll label it with `f:feature-request`, or
 - to discuss your idea privately, [contact us](http://queensland.theodi.org/home/contact-us/)
 
 If a similar idea is in the issues backlog, please join the conversation in that issue.
 
 ## Contribute Issues
 
-If you encounter a problem, please [add an issue](https://github.com/ODIQueensland/data-curator/issues). Make sure it hasn't already be reported.
+If you encounter a problem, please [add an issue](https://github.com/qcif/data-curator/issues). Make sure it hasn't already be reported.
 
 In order for us to best respond to the issue, we need as much information about the issue as you can provide. Please fill in as many sections as apply from our issue ticket template to provide us with as much detail as possible. Provide a descriptive name for your issue.
 
@@ -35,13 +35,13 @@ If you're [able](https://help.github.com/articles/applying-labels-to-issues-and-
 Help documentation is currently being drafted in a [separate repository](https://github.com/Stephen-Gates/csv-lingo). Feel free to contribute there.
 
 ## Contribute Code
-Data Curator is open source, and we a grateful for [all code contributions](https://github.com/ODIQueensland/data-curator/graphs/contributors). By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/ODIQueensland/data-curator/blob/master/.github/CODE_OF_CONDUCT.md).
+Data Curator is open source, and we a grateful for [all code contributions](https://github.com/qcif/data-curator/graphs/contributors). By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/qcif/data-curator/blob/master/.github/CODE_OF_CONDUCT.md).
 
-Before you start coding, please reach out to us either by email  [connect@odiqueensland.org.au](mailto:connect@odiqueensland.org.au) or by tagging a repository administrator on the issue ticket you are interested in contributing towards to indicate your interest in helping.
+Before you start coding, please reach out to us either by email  [support@redboxresearchdata.com.au](mailto:support@redboxresearchdata.com.au) or by tagging a repository administrator on the issue ticket you are interested in contributing towards to indicate your interest in helping.
 
 If this is your first time contributing to the ODI Australian Network’s codebase you will need to [create a fork of this repository](https://help.github.com/articles/fork-a-repo/).
 
-Follow the [readme instructions](https://github.com/ODIQueensland/data-curator#development) to get your Development environment running locally.
+Follow the [readme instructions](https://github.com/qcif/data-curator#development) to get your Development environment running locally.
 
 Ensure that the automated tests pass before starting work on your contribution.
 
